@@ -26,7 +26,6 @@ body {
   color: white;
   align-items: center;
 }
-
 .icon {
   font-size: 1.5rem;
   align-self: end;
@@ -41,11 +40,15 @@ body {
   align-items: center;
 }
 
+.navbar li {
+  padding: 0.25em;
+}
+
 .navbar li:hover,
 .navbar li:active,
 .navbar li:focus {
-  padding: 0.25em;
   border-bottom: 2px solid #da0006;
+  font-weight: 700;
 }
 
 .navbar a {
@@ -64,4 +67,23 @@ body {
   flex-direction: column;
   padding: 2em;
   gap: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 1em;
+  }
+  .menu-bg {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  .menu-items {
+    flex-direction: row;
+  }
 }
