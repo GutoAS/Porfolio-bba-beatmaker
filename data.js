@@ -6,6 +6,7 @@ export const playList = [
     time: "2:41",
     cover: "./images/cover1.png",
     audio: "./music/test.mp3",
+    isPreview: true,
   },
   {
     id: 2,
@@ -14,5 +15,6 @@ export const playList = [
     time: "3:11",
     cover: "./images/cover2.png",
     audio: "./music/test2.mp3",
+    isPreview: false,
   },
 ];
