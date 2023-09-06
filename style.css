@@ -212,6 +212,7 @@ body {
 
 /* About me Section */
 .about-info-image {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -252,6 +253,16 @@ body {
 .about-me-flex {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.red-rectangle {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  width: 200px;
+  height: 267px;
+  background-image: linear-gradient(92deg, #da0006 0%, #9e0004 100%);
+  z-index: -9;
 }
 /* media */
 
@@ -311,5 +322,10 @@ body {
 
   .about-info-expirience {
     font-size: 1.125rem;
+  }
+
+  .red-rectangle {
+    width: 300px;
+    height: 400px;
   }
 }
