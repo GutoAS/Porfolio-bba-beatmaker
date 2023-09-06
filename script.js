@@ -81,4 +81,3 @@ function render() {
 }
 
 render();
-// ${beat.isPreview ? <p class="preview">PREVIEW</p> : ""}
