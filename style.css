@@ -131,6 +131,7 @@ body {
   border-radius: 80px;
   letter-spacing: 2.4px;
   filter: drop-shadow(0px 0px 10px #da0006);
+  font-family: inherit;
 }
 
 /* Beats Section */
@@ -299,6 +300,37 @@ body {
   margin-top: 0.5em;
 }
 
+/* Contact Us */
+input,
+textarea {
+  padding: 8px 16px;
+  display: block;
+  width: 100%;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 0 auto;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1.875em;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 1.5em;
+  padding: 8px 16px;
+  color: white;
+  background-image: linear-gradient(135deg, #da0006 0%, #9e0004 100%);
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 2.4px;
+  filter: drop-shadow(0px 0px 10px #da0006);
+  font-family: inherit;
+  border-radius: 10px;
+  margin: 0 auto;
+}
 /* media */
 
 @media only screen and (min-width: 770px) {
@@ -370,6 +402,12 @@ body {
   }
 
   .skill-title {
+    font-size: 1.125rem;
+  }
+
+  input,
+  textarea {
+    width: 80%;
     font-size: 1.125rem;
   }
 }
