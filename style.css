@@ -214,6 +214,7 @@ body {
 .about-info-image {
   position: relative;
   margin: 0 auto;
+  z-index: -1;
 }
 
 .image-container {
@@ -264,6 +265,40 @@ body {
   background-image: linear-gradient(92deg, #da0006 0%, #9e0004 100%);
   z-index: -9;
 }
+
+/* Skills */
+.rounded-skill {
+  position: relative;
+  background-color: #22101e;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.skill-title {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
 /* media */
 
 @media only screen and (min-width: 770px) {
@@ -327,5 +362,14 @@ body {
   .red-rectangle {
     width: 300px;
     height: 400px;
+  }
+
+  .rounded-skill {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skill-title {
+    font-size: 1.125rem;
   }
 }
