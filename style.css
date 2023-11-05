@@ -109,6 +109,7 @@ body {
   flex-direction: column;
   padding: 2em;
   gap: 100px;
+  z-index: 10;
 }
 
 /* Home Section */
